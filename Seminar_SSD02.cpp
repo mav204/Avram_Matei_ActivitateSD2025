@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<malloc.h>
+#incluse<string.h>
 
 struct Masina {
 	int id;
