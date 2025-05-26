@@ -218,13 +218,13 @@ float calculeazaPretTotal(ListaDubla* coada) {
 }
 
 int main() {
-	Nod* stiva = citireStackMasiniDinFisier("/Users/alexantonescu/Documents/SEMINAR-SDD11/masini.txt");
+	Nod* stiva = citireStackMasiniDinFisier("masini.txt");
 	int nrElemente = size(stiva);
 	printf("\n%d\n", nrElemente);
 	Masina m = popStack(&stiva);
 	afisareMasina(m);
 
-	ListaDubla coada = citireCoadaDeMasiniDinFisier("/Users/alexantonescu/Documents/SEMINAR-SDD11/masini.txt");
+	ListaDubla coada = citireCoadaDeMasiniDinFisier("masini.txt");
 	Masina masina = dequeue(&coada);
 	afisareMasina(masina);
 	printf("suma: %.2f ", calculeazaPretTotal(&coada));
