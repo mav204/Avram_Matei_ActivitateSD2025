@@ -3,9 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-//trebuie sa folositi fisierul masini.txt
-//sau va creati un alt fisier cu alte date
-
 struct StructuraMasina {
 	int id;
 	int nrUsi;
@@ -51,9 +48,7 @@ struct Nod {
 	Masina info;
 	Nod* next;
 };
-//STACK
-//Alegeti prin ce veti reprezenta stiva si creati structura necesara acestei stive
-//putem reprezenta o stiva prin LSI, LDI sau vector
+
 void pushStack(Nod** stiva, Masina masina) {
 	Nod* nou = (Nod*)malloc(sizeof(Nod));
 	nou->info = masina;
@@ -106,9 +101,7 @@ int size(Nod* stiva) {
 	return count;
 }
 
-//QUEUE
-//Alegeti prin ce veti reprezenta coada si creati structura necesara acestei cozi
-//putem reprezenta o coada prin LSI, LDI sau vector
+
 typedef struct NodDublu NodDublu;
 struct NodDublu {
 	Masina info;
